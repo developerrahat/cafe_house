@@ -1,0 +1,269 @@
+body,h2,h3,h4,span{
+    font-family: 'Damion', cursive;
+}
+body,h1{
+    font-family:'Bona Nova', serif;
+}
+body,p,a{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: #e4e4e4;
+}
+/* header area's css start */
+.top-header{
+    background: #000000 !important;
+}
+.top-header a span{
+    color: #c79c60;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.top-menu{}
+.top-menu .nav-item{}
+.top-menu .nav-item .nav-link{
+    display: inline-block;
+    margin: 0 22px;
+    padding: 0;
+    font-size: 15px;
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    transition: .5s;
+}
+.top-menu .nav-item .nav-link:hover{
+    color: #c79c60 !important;
+}
+.top-menu .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width:0;
+    height: 2px;
+    background:#c79c60 ;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.top-menu .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    width:0;
+    height: 2px;
+    background:#c79c60;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.top-menu .nav-item .nav-link:hover::before{
+   visibility: visible;
+   opacity: 1;
+   width:45%;
+   bottom: -3px;
+}
+.top-menu .nav-item .nav-link:hover::after{
+   visibility: visible;
+   opacity: 1;
+   width: 45%;
+   bottom: -3px;
+}
+.top-menu .nav-item:last-child .nav-link{
+    margin-right: 0;
+}
+.top-menu .nav-item:first-child .nav-link{
+    color:#c79c60 !important;
+}
+/* header area's css end */
+
+/* banner css start */
+.bulb{
+    background: #282726;
+}
+.banner-text{
+    padding-bottom: 200px;
+    position: relative;
+    
+}
+.banner-text h2 {
+	color: white;
+	font-size: 60px;
+   
+}
+.banner-text h2 span{
+}
+.banner-text h2 span::after {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left:140px;
+	width:80px;
+	height: 2px;
+	background: white;
+}
+.banner-text h1{
+    color: #c79c60;
+    font-size:4rem;
+    text-transform: uppercase;
+}
+.banner-text p{
+    color: #949494;
+    font-size: 15px;
+}
+.banner-btn{
+    width: 200px;
+    height: 40px;
+    background: #5d3c31 !important;
+    color: #c79c60;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid white !important;
+    border-radius: 10px;
+}
+/* banner css end */
+
+/* banner bottom img css */
+.banner-bottom{}
+.b-img{
+    position: relative;
+    top: -60%;
+}
+
+/* coffee sec css start */
+.coffee-house{
+    position: relative;
+    top: -80px;
+}
+.c-left-text{}
+.c-left-text h2{
+    color: #c79c60;
+}
+.c-left-text p{
+    color: #111111;
+    font-size: 15px;
+}
+
+.right-img img{
+    box-shadow: 0 10px 10px 2px rgba(0, 0, 0, .5);
+}
+
+/* popular item css start */
+
+.item-left span{
+    color: #c79c60;
+    font-size: 2rem;
+}
+.item-title{
+    position: relative;
+}
+.item-title span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 1px;
+    background: #c79c60;
+}
+.item-card:hover{
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .4);
+    transition: .4s ease-in-out;
+    transform:translateY(10px);
+    cursor: pointer;
+}
+.item-card h2{
+    border-bottom: 2px solid transparent;
+}
+.item-card:hover h2{
+    border-bottom: 2px solid #c79c60;
+    display: inline-block;
+    color: #c79c60;
+}
+.item-card .card .card-body p{
+    font-size: 15px;
+}
+
+.c-img span{
+    display: inline-block;
+    background: #524c4c;
+    color: wheat;
+    font-size: 22px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #c79c60;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .4);
+    position: relative;
+}
+.c-img span{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* popular item css end */
+
+/* daily menu css start */
+.menu-text{}
+.menu-text p{
+    font-size: 15px;
+}
+.menu-text ul{}
+.menu-text ul li{
+    font-size: 15px;
+}
+.menu-text ul li::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 10px;
+    color: #c79c60;
+}
+/* daily menu css end */
+
+/* footer top menu css start */
+.f-menu ul li a{
+    display: block;
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .4s;
+
+}
+.f-menu ul li a:hover{
+    color: #c79c60;
+}
+.footer-top{
+    background: #302f2f;
+}
+.f-text p{
+    font-size: 15px;
+}
+.f-social ul li{
+    display: inline-block;
+}
+.f-social ul li a{
+    display: block;
+    width: 40PX;
+    height: 40PX;
+    line-height: 40PX;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    background: #505050;
+    border-radius: 3px;
+    transition: .4s;
+}
+.f-social ul li a:hover{
+    background: #c79c60;
+}
+/* footer top menu css end */
